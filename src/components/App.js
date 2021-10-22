@@ -3,7 +3,6 @@ import {data} from "../data";
 import Navbar from "./Navbar";
 import MovieCard from "./MovieCard";
 
-
 function App() {
   return (
     <div className="App">
@@ -22,5 +21,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
