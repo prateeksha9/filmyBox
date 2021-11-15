@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/filmybox/static/css/main.e132b41e.chunk.css",
+    "main.js": "/filmybox/static/js/main.bf04fe64.chunk.js",
+    "main.js.map": "/filmybox/static/js/main.bf04fe64.chunk.js.map",
+    "runtime-main.js": "/filmybox/static/js/runtime-main.92fe08c9.js",
+    "runtime-main.js.map": "/filmybox/static/js/runtime-main.92fe08c9.js.map",
+    "static/js/2.fee0e1aa.chunk.js": "/filmybox/static/js/2.fee0e1aa.chunk.js",
+    "static/js/2.fee0e1aa.chunk.js.map": "/filmybox/static/js/2.fee0e1aa.chunk.js.map",
+    "index.html": "/filmybox/index.html",
+    "static/css/main.e132b41e.chunk.css.map": "/filmybox/static/css/main.e132b41e.chunk.css.map",
+    "static/js/2.fee0e1aa.chunk.js.LICENSE.txt": "/filmybox/static/js/2.fee0e1aa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92fe08c9.js",
+    "static/js/2.fee0e1aa.chunk.js",
+    "static/css/main.e132b41e.chunk.css",
+    "static/js/main.bf04fe64.chunk.js"
+  ]
+}
