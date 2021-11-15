@@ -5,6 +5,8 @@ import thunk from 'redux-thunk';
 import './index.css';
 import App from './components/App';
 import rootReducer from './reducers';
+import { createContext } from 'react';
+import { Provider } from 'react-redux';
 
 
 //create middleware
@@ -43,10 +45,60 @@ console.log('store', store);
 //   movies: [{name : 'Superman'}]
 // });
 
+
+// export const StoreContext = createContext();
+// console.log(StoreContext);
+
+
+// class Provider extends React.Component{
+//   render(){
+//     const {store} = this.props
+//     return <StoreContext.Provider value={store}> 
+//       {this.props.children}  
+//     </StoreContext.Provider>
+//   }
+// }
+ 
+// const connectedAppComponent =  connect(callback)(App);
+// export function connect(callback){
+//   return function (Component) {
+//     class ConnectedComponent extends React.Component{
+//       constructor(props) {
+//         super(props);
+//         this.unsubscribe = this.props.store.subscribe(() => this.forceUpdate())
+//       }
+
+//       componentWillUnmount(){
+//         this.unsubscribe()
+//       }
+//       render(){
+        
+//           const {store} = this.props;
+//             const state = store.getState();
+//             const dataToBePassedAsProps = callback(state);
+//             return <Component 
+//             {...dataToBePassedAsProps}
+//             dispatch = {store.dispatch}
+//              /> 
+          
+//       }
+//     }
+//     class connectedComponentwrapper extends React.Component{
+//       render(){
+//         return <StoreContext.Consumer>
+//             {store => <ConnectedComponent store={store}/>}
+//           </StoreContext.Consumer>
+        
+//       }
+      
+//     }
+//     return connectedComponentwrapper
+//   }
+// }
 ReactDOM.render(
-  // <React.StrictMode>
-    <App store = {store}/>,
-  // </React.StrictMode>,
-  document.getElementById('root')
-);
+  <Provider store = {store}>
+    <App /> 
+    {/* store = {store}  */}
+  </Provider>, 
+document.getElementById('root'));
 
